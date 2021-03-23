@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+}
+ul li{
+    padding: 0 16px;
+}
+ul li a{
+    font-weight: 500;
+    color: #000 !important;
+}
+.navbar ul li .active{
+    color: orange !important;
+}
+
+.card-features {
+    box-shadow: 0 0 2px rgba(0, 0,0, 0.125);
+}
+.card-features .bg-top .new h5{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform: rotate(180deg);
+    white-space:nowrap;
+}
+.card-features {
+    margin: 20px 0;
+}
+.card-features .btn{
+    display: none;
+}
+.card-features .btn a{
+    font-size: 12px;
+}
+.card-features:hover .btn{
+    display: block;
+    transition: .7s ease-in;
+    transform: translateY(10px);
+}
+.card-features:hover{
+    box-shadow: 0 0 30px rgba(0, 0,0, 0.125);
+}
+.card-product:hover{
+    background-color: #ffedd9;
+}
+/* .card-product .new h5{
+    writing-mode:tb-rl;
+   
+    transform: rotate(180deg);
+    white-space:nowrap;
+} */
+.card-product{
+    box-shadow: 0 0 3px rgba(0, 0,0, 0.125);
+
+}
+.card-product .btn-1{
+    display: none;
+}
+.card-product:hover .btn-1{
+    display: block;
+}
+footer ul li{
+    list-style: none;
+    margin-left: -48px;
+    padding-bottom: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    opacity: 0.6;
+}
+footer h6{
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+@media (min-width: 300px) { 
+    .carousel-inner .text-content h1{
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.7;
+        padding: 10px 0 13px 0;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: none;
+    }
+    .section-about .img-content img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 10px !important;
+    }
+    .section-about .text-content{
+        margin-top: 40px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 13px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 0px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        left:7px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar .cart{
+        margin-left: 18px !important;
+        margin-top: 7px;
+    }
+    .navbar button{
+        display: block;
+    }
+ }
+
+@media (min-width: 400px) { 
+    .carousel-inner .text-content h1{
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0.7;
+        padding: 10px 0 13px 0;
+        font-size: 12px !important;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: none;
+    }
+    .section-about .img-content img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+    }
+    .section-about .text-content{
+        margin-top: 40px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 15px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 0px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: -10px;
+        left: -10px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar .cart{
+        margin-left:18px !important;
+        margin-top: 7px;
+    }
+    .navbar button{
+        display: block;
+    }
+ }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .carousel-inner .text-content h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.7;
+        padding: 10px 0 13px 0;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: none;
+    }
+    .section-about .img-content img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 14px !important;
+    }
+    .section-about .text-content{
+        margin-top: 40px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 15px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 0px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 20px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar .cart{
+        margin-left: 18px !important;
+        margin-top: 7px;
+    }
+    .navbar button{
+        display: block;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .carousel-inner .text-content h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.7;
+        padding: 10px 0 13px 0;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: none;
+    }
+    .section-about .img-content img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 15px !important;
+    }
+    .section-about .text-content{
+        margin-top: 40px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 15px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 0px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        left: 40px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: none;
+    }
+    .navbar .cart{
+        margin-left: 14px !important;
+        margin-top: 7px;
+    }
+    .navbar button{
+        display: block;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .carousel-inner .text-content h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.7;
+        padding: 10px 0 13px 0;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: block;
+    }
+    .section-about .img-content img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 15px !important;
+    }
+    .section-about .text-content{
+        margin-top: 40px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 15px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 40px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        left: 40px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: block;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: block;
+    }
+    .navbar .cart{
+        margin-left: auto !important;
+        margin-top: 0;
+    }
+    .navbar button{
+        display: none;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .carousel-inner .text-content h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: rgb(69, 69, 69);
+    }
+    .carousel-inner .text-content p{
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.5 !important;
+        padding: 10px 0 0px 0;
+    }
+    .carousel-inner .img-content img{
+        width: 80%;
+        height: 80%;
+        margin-left: -100px;
+        margin-top: -40px;
+        display: block;
+    }
+    .section-about .img-content img{
+        width: 90%;
+        height: 90%;
+    }
+    .section-about .text-content p{
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 15px !important;
+    }
+    .section-about .text-content{
+        margin-top: 50px;
+    }
+    .section-history .img-content img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 9999;
+    }
+    .section-history .text-content p{
+        font-size: 15px;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .section-history .text-content{
+        margin-left: 40px;
+        margin-top: 90px;
+        text-align: left;
+    }
+    .section-history .img-content .kotak{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        left: 40px;
+    }
+    .carousel-control-prev{
+        margin-left: -40px;
+    }
+    .carousel-control-next{
+        margin-left: 40px;
+    }
+    .navbar ul li .active::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: block;
+    }
+    .navbar ul li a:hover::after{
+        content: '';
+        border-bottom: 3px solid orange !important;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        display: block;
+    }
+    .navbar .cart{
+        margin-left: auto !important;
+        margin-top: 0;
+    }
+    .navbar button{
+        display: none;
+    }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
